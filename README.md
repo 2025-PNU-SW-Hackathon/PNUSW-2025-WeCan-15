@@ -143,29 +143,72 @@ WeCam은 단순한 협업툴이 아니라
 
 ### 3.4. 디렉토리 구조
 
-```plaintext
-WeCam-Backend/
-├── src/
-│   ├── main/
-│   │   ├── java/com/wecam/
-│   │   ├── resources/
-│   │   │   ├── application.yml
-│   │   │   ├── static/
-│   │   │   ├── templates/
-├── build.gradle
-├── Dockerfile
+📁 domain-common
+공통 도메인 엔티티 및 enum 관리 모듈
 
-WeCam-Frontend/
-├── src/
-│   ├── app/
-│   ├── components/
-│   ├── pages/
-│   ├── public/
-│   ├── styles/
-├── package.json
-├── tailwind.config.js
-├── Dockerfile
-```
+src/main/java/org/example/model
+
+affiliation: 소속 인증 관련 엔티티 (AffiliationCertification, AffiliationFile 등)
+
+common: BaseTimeEntity 등 공통 엔티티 상속 구조
+
+council: 학생회, 부서, 멤버, 권한 정책 엔티티
+
+enums: 시스템 전반에서 사용하는 열거형 모음 (권한, 상태, 분류 등)
+
+invitation: 초대 코드 및 기록 엔티티
+
+organization: 조직 및 조직 생성 요청 관련 엔티티
+
+todo: 할일(Todo) 관련 엔티티
+
+user: 유저 정보, 가입 이력, 개인정보 등
+
+📁 wecam-backend
+일반 사용자 + 클라이언트용 API 서버
+
+src/main/java/org/example/wecambackend
+
+WecamBackendApplication.java: 백엔드 메인 실행 클래스
+
+common: 예외 처리, 응답 포맷, 컨텍스트 관리 등 공통 유틸
+
+config: Spring Security, JWT, Redis, OpenAPI 등 설정
+
+controller: API 엔드포인트 컨트롤러
+
+admin: 관리자 페이지용 API
+
+client: 일반 사용자(학생)용 API
+
+publicinfo: 공개 API (학교/조직 조회 등)
+
+dto: 요청/응답 DTO
+
+repos: JPA Repository
+
+service: 서비스 로직 계층
+
+util: 유틸 클래스 (현재 유저 정보, 암호화 등)
+
+📁 wecamadminbackend
+관리자 페이지 전용 백엔드 서버 (Spring + Thymeleaf 기반)
+
+src/main/java/org/example/wecamadminbackend
+
+WecamadminbackendApplication.java: 관리자 백엔드 메인 실행 클래스
+
+controller: 관리자 뷰 라우터 (dashboard, organization, login)
+
+dto: 관리자 뷰에서 사용하는 DTO
+
+entity: 관리자용 유저 엔티티 (ex. AdminUser)
+
+repos: 관리자 전용 JPA Repository
+
+service: 관리자 기능 구현 로직 (조직 승인 등)
+
+util: 암호화, 패스워드 해싱 유틸리티
 ---
 
 ## 4. 설치 및 사용 방법
