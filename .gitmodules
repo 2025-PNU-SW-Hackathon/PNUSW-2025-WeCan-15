@@ -2,3 +2,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/wecampus-platform/wecam-all-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/wecampus-platform/wecam-all-frontend.git
