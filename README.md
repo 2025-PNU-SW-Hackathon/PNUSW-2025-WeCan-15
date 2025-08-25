@@ -297,8 +297,9 @@ wecam-all-frontend/
 #### Backend
 
 ```bash
-./gradlew build
-java -jar build/libs/wecam-backend.jar
+git clone https://github.com/wecampus-platform/wecam-all-backend.git
+cd wecam-all-backend
+java -jar wecam-backend/build/libs/wecam-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=local
 ```
 
 #### Frontend
@@ -312,6 +313,11 @@ npm start
 ```bash
 docker-compose up --build
 ```
+
+### 웹사이트 접속
+- https://www.wecampus.co.kr 
+- 위 사이트 접속을 통해 바로 확인할 수도 있다.
+
 
 ## 5. 소개 및 시연 영상
 
