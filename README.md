@@ -14,6 +14,9 @@
 
 우리 팀은 줄어드는 학생회 참여와 비효율적인 업무 방식이 학생 자치의 지속가능성을 위협한다고 보았다. 전직 학생회 간부들로 구성된 팀원들은 활동 경험을 통해, 현재 학생회가 여러 개의 툴을 오가며 업무를 처리하는 비효율이 크다는 점에 주목했다. 예를 들어 회의 기록을 위한 문서 작업, 학생 공지사항 전달을 위한 SNS 게시, 예산 관리와 인수인계를 위한 스프레드시트 등 파편화된 도구 사용으로 업무 누수가 발생하고 부담이 가중되고 있었다. 이러한 비효율을 해소하고 남은 인원으로도 효과적으로 학생회를 운영할 수 있도록 지원하는 통합 플랫폼의 필요성이 대두되었다. 위캠퍼스(Wecampus) 프로젝트는 바로 이러한 문제의식에서 출발하였으며, 학생회의 업무 효율을 높여 줄어든 참여 인원을 다시 늘리고 학생 자치의 활력을 되찾는 것을 목표로 기획되었다. 이를 통해 학생사회 구성원들의 지속적인 참여를 이끌어내어 무너져가는 학생회의 지속가능성을 확보하고자 한다.
 
+<img width="2000" height="378" alt="해결책" src="https://github.com/user-attachments/assets/0117424e-8932-4819-9bb3-2b74255b67e2" />
+
+
 ### 1.2. 개발 목표 및 주요 내용
 
 위캠퍼스는 대학 학생회를 위한 통합 업무 플랫폼으로, 흩어져 있는 학생회 업무 프로세스를 하나의 시스템 안에서 수행할 수 있도록 개발된다. 개발 목표는 크게 두 가지이다. 첫째, 학생회 내부의 협업 효율을 극대화하여 업무 부담을 경감시키는 것이다. 둘째, 학생회와 일반 학생 및 학교 당국 간의 소통을 원활하게 통합하여 학생사회 전체의 참여도를 높이는 것이다. 이러한 목표를 달성하기 위해 위캠퍼스는 다음과 같은 주요 기능과 콘텐츠를 제공한다.
@@ -93,18 +96,25 @@
 
 ### 2.2. 사용 기술
 
-| 구분       | 기술 스택                   | 버전            |
-| -------- | ----------------------- | ------------- |
-| Frontend | Next.js (React 기반)      | 14.x          |
-| Frontend | Tailwind CSS            | 3.x           |
-| Backend  | Spring Boot             | 3.2.x         |
-| Backend  | Java                    | 21 (Corretto) |
-| Database | MySQL (AWS RDS)         | 8.x           |
-| Infra    | AWS EC2                 | -             |
-| Infra    | Docker / Docker Compose | 최신          |
-| CI/CD    | GitHub Actions          | -             |
 
----
+**Frontend**  
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+
+**Backend**  
+<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+
+**Database**   
+<img src="https://img.shields.io/badge/MySQL%20(AWS%20RDS)-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL (AWS RDS)" />
+
+**Infra**  
+<img src="https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white" alt="AWS EC2" />
+<img src="https://img.shields.io/badge/Docker%20/%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker / Docker Compose" />
+
+**CI/CD**  
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+
 
 ## 3. 개발 결과
 
