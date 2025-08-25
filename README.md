@@ -166,108 +166,154 @@
 
 ### 3.4. 디렉토리 구조
 
-📁 domain-common
-공통 도메인 엔티티 및 enum 관리 모듈
+#### [프론트엔드](https://github.com/wecampus-platform/wecam-all-frontend)
 
-src/main/java/org/example/model
+```text
+wecam-all-frontend/
+├─ package.json                         - 패키지 관리 및 스크립트
+├─ tsconfig.json                        - TypeScript 설정
+├─ next.config.ts                       - Next.js 설정
+├─ Dockerfile                           - 컨테이너 빌드 설정
+├─ run-frontend.sh                      - 실행 스크립트
+├─ public/                              - 정적 자원(로고, 이미지)
+├─ src/                                 - 애플리케이션 소스
+│  ├─ 📁 api-service/                   - API 호출 모듈 모음
+│  ├─ 📁 app/                           - 라우팅/페이지 엔트리
+│  │  ├─ login/                         - 로그인 페이지
+│  │  ├─ register/                      - 회원가입 페이지
+│  │  ├─ landing/                       - 랜딩 페이지
+│  │  ├─ workspace/                     - 워크스페이스 관련 페이지
+│  │  ├─ admin/                         - 관리자 영역
+│  │  │  ├─ meeting/                    - 회의록 관리
+│  │  │  ├─ todo/                       - 할 일 관리
+│  │  │  ├─ member-manage/              - 멤버 관리
+│  │  │  ├─ invitation/                 - 초대 코드 관리
+│  │  │  └─ council-affiliation/        - 소속 인증 관리
+│  │  └─ client/                        - 일반 사용자 영역
+│  │     └─ mypage/                     - 마이페이지
+│  ├─ 📁 components/                    - 공통 컴포넌트
+│  │  ├─ icons/                         - 아이콘
+│  │  ├─ modals/                        - 모달
+│  │  ├─ header                         - 헤더 컴포넌트
+│  │  ├─ nav                            - 내비게이션
+│  │  └─ side-bar                       - 사이드바
+│  ├─ 📁 hooks/                         - 커스텀 훅
+│  ├─ 📁 utils/                         - 유틸리티 함수
+│  ├─ 📁 store/                         - 전역 상태 관리
+│  ├─ 📁 types/                         - 타입 정의
+│  ├─ 📁 mocks/                         - 목업 데이터
+│  └─ lib/                              - 라이브러리 헬퍼
+├─ eslint.config.mjs                    - ESLint 설정
+├─ postcss.config.mjs                   - PostCSS 설정
+└─ jsconfig.json                        - 경로/IDE 설정
+```
 
-affiliation: 소속 인증 관련 엔티티 (AffiliationCertification, AffiliationFile 등)
 
-common: BaseTimeEntity 등 공통 엔티티 상속 구조
-
-council: 학생회, 부서, 멤버, 권한 정책 엔티티
-
-enums: 시스템 전반에서 사용하는 열거형 모음 (권한, 상태, 분류 등)
-
-invitation: 초대 코드 및 기록 엔티티
-
-organization: 조직 및 조직 생성 요청 관련 엔티티
-
-todo: 할일(Todo) 관련 엔티티
-
-user: 유저 정보, 가입 이력, 개인정보 등
-
-📁 wecam-backend
-일반 사용자 + 클라이언트용 API 서버
-
-src/main/java/org/example/wecambackend
-
-WecamBackendApplication.java: 백엔드 메인 실행 클래스
-
-common: 예외 처리, 응답 포맷, 컨텍스트 관리 등 공통 유틸
-
-config: Spring Security, JWT, Redis, OpenAPI 등 설정
-
-controller: API 엔드포인트 컨트롤러
-
-admin: 관리자 페이지용 API
-
-client: 일반 사용자(학생)용 API
-
-publicinfo: 공개 API (학교/조직 조회 등)
-
-dto: 요청/응답 DTO
-
-repos: JPA Repository
-
-service: 서비스 로직 계층
-
-util: 유틸 클래스 (현재 유저 정보, 암호화 등)
-
-📁 wecamadminbackend
-관리자 페이지 전용 백엔드 서버 (Spring + Thymeleaf 기반)
-
-src/main/java/org/example/wecamadminbackend
-
-WecamadminbackendApplication.java: 관리자 백엔드 메인 실행 클래스
-
-controller: 관리자 뷰 라우터 (dashboard, organization, login)
-
-dto: 관리자 뷰에서 사용하는 DTO
-
-entity: 관리자용 유저 엔티티 (ex. AdminUser)
-
-repos: 관리자 전용 JPA Repository
-
-service: 관리자 기능 구현 로직 (조직 승인 등)
-
-util: 암호화, 패스워드 해싱 유틸리티
----
+#### [백엔드](https://github.com/wecampus-platform/wecam-all-frontend)
+```text
+📁 wecam-all-backend/                           - 모노레포 루트
+├─ build.gradle
+├─ settings.gradle
+├─ gradle/
+│  └─ wrapper/
+├─ 📁 domain-common/                            - 공용 도메인/엔티티 모듈
+│  ├─ build.gradle
+│  └─ src/main/java/org/example/model/
+│     ├─ common/                                - 공통 베이스 엔티티/유틸
+│     ├─ enums/                                 - 공용 열거형
+│     ├─ affiliation/                           - 소속 인증 관련 엔티티
+│     ├─ category/                              - 카테고리 관련 엔티티
+│     ├─ council/                               - 학생회 관련 엔티티
+│     ├─ file/                                  - 파일 관련 엔티티
+│     ├─ invitation/                            - 초대 코드 관련 엔티티
+│     ├─ meeting/                               - 회의 관련 엔티티
+│     ├─ organization/                          - 조직 관련 관련
+│     ├─ todo/                                  - 할 일 관련 엔티티
+│     ├─ user/                                  - 사용자 관련 엔티티
+│     └─ University.java                        - 대학 관련 엔티티
+├─ 📁 wecam-backend/                            - 메인 백엔드 서비스
+│  ├─ build.gradle
+│  └─ src/
+│     ├─ main/
+│     │  ├─ java/org/example/wecambackend/
+│     │  │  ├─ WecamBackendApplication.java     - Spring Boot 엔트리
+│     │  │  ├─ config/                          - 전역 설정
+│     │  │  │  ├─ AppConfig.java
+│     │  │  │  ├─ OpenApiConfig.java
+│     │  │  │  ├─ QuerydslConfig.java
+│     │  │  │  ├─ auth/                         - 인증 인프라(JWT 필터·토큰)
+│     │  │  │  └─ security/                     - 권한 체크/어노테이션/필터
+│     │  │  ├─ controller/
+│     │  │  │  ├─ admin/                        - 학생회 관리자 페이지 전용 API
+│     │  │  │  ├─ auth/                         - 로그인·회원가입 등 인증 API
+│     │  │  │  ├─ client/                       - 일반 사용자(학생 등)용 API
+│     │  │  │  └─ publicinfo/                   - 공개 정보 API
+│     │  │  ├─ service/
+│     │  │  │  ├─ admin/                        - 학생회 관리자 페이지 전용 서비스 로직
+│     │  │  │  ├─ auth/                         - 로그인·회원가입 등 인증 서비스 로직
+│     │  │  │  └─ client/                       - 일반 사용자(학생 등) 페이지 서비스 로직
+│     │  │  ├─ dto/                             - 요청/응답/프로젝션 DTO
+│     │  │  ├─ repos/                           - JPA 리포지토리
+│     │  │  └─ util/                            - 공용 유틸(파일/암호화 등)
+│     │  └─ resources/
+│     │     ├─ application.properties           - 기본 설정
+│     │     ├─ application-local.properties     - 로컬 설정
+│     │     ├─ db/
+│     │     │  ├─ schema.sql                    - 참고 스키마
+│     │     │  └─ migration/                    - Flyway 마이그레이션
+│     └─     └─ static/                         - 테스트용 정적 리소스(HTML 등)
+└─ 📁 wecamadminbackend/                        - 관리자 웹(백오피스)
+   ├─ build.gradle
+   └─ src/
+      ├─ main/
+      │  ├─ java/org/example/wecamadminbackend/
+      │  │  ├─ config/SecurityConfig.java
+      │  │  ├─ controller/                      - 관리자 화면 컨트롤러
+      │  │  ├─ dto/                             - 관리자 전용 DTO
+      │  │  ├─ entity/                          - 관리자 도메인 엔티티
+      │  │  ├─ repos/                           - 관리자 리포지토리
+      │  │  └─ service/                         - 관리자 서비스/유틸
+      │  └─ resources/
+      │     ├─ application.properties
+      │     ├─ db/migration/                    - 관리자 마이그레이션
+      │     ├─ db/seed/                         - 초기 데이터 시드
+      │     ├─ static/css/admin.css
+      │     └─ templates/                       - Thymeleaf 템플릿
+      │        ├─ layout.html
+      └─        └─ admin/                       - 대시보드/조직 관리 등
+```
 
 ## 4. 설치 및 사용 방법
 
 ### 설치
 
-* Docker / Docker Compose 설치
-* Node.js / npm 설치
+- Docker 및 Docker Compose 설치
+- Node.js 및 npm 설치
+- Java 설치
 
 ### 실행 방법
 
 #### Backend
 
-bash
+```bash
 ./gradlew build
 java -jar build/libs/wecam-backend.jar
-
+```
 
 #### Frontend
 
-bash
+```bash
 npm install
 npm start
-
+```
 
 #### Docker Compose (전체 실행 시)
-
-bash
+```bash
 docker-compose up --build
-
-
----
+```
 
 ## 5. 소개 및 시연 영상
 
----
 
 ## 6. 팀 소개
 
