@@ -317,14 +317,14 @@ docker-compose up --build
 
 ## 6. 팀 소개
 
-| 이름  | 역할          | 연락처             |
-| --- | ----------- | --------------- |
-| 김예슬 | 팀장 / 백엔드 개발 | yesul0718@pusan.ac.kr |
-| 김나림 | 프론트엔드 개발    |                 |
-| 김대욱 | AI 서비스 연동 | kdu5233@pusan.ac.kr|
-| 김동인 | 백엔드 개발 | dongin@pusan.ac.kr |
-| 김예원 | 디자이너        |                 |
-| 박장현 | 기획   |                 |
+## 1234
+> 5678
+
+| 김예슬 | 김나림 | 김대욱 | 김동인 | 김예원 | 박장현 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|<img width="100px" alt="김예슬" src="https://github.com/yeseul-kim01.png" /> | <img width="100px" alt="김나림" src="https://github.com/rlanafla.png" /> | <img width="100px" alt="김대욱" src="https://github.com/TrioDW.png" /> | <img width="100px" alt="김동인" src="https://github.com/qlqlrh.png" /> | <img width="100px" alt="김예원" src="https://github.com/janghyeon02.png" /> | <img width="100px" alt="박장현" src="https://github.com/janghyeon02.png" /> 
+| yesul0718@pusan.ac.kr | pc123@pusan.ac.kr | kdu5233@pusan.ac.kr | dongin@pusan.ac.kr | yewon1799@pusan.ac.kr | jangh1519@pusan.ac.kr | 
+| 정보컴퓨터공학부 <br/> 백엔드 개발 | 정보컴퓨터공학부 <br/> 프론트엔드 개발 |  정보컴퓨터공학부 <br/> AI 개발 및 인프라 구축 | 정보컴퓨터공학부 <br/> 백엔드 개발 | 시각디자인학과 <br/> 디자인 | 경제학부 <br/> 기획 | 
 
 ---
 
