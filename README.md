@@ -359,14 +359,47 @@ docker-compose up --build
 
 ## 6. 팀 소개
 
-## 1234
-> 5678
+김예슬 (대표자, 부산대학교 정보컴퓨터공학부)
 
-| 김예슬 | 김나림 | 김대욱 | 김동인 | 김예원 | 박장현 |
-|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|<img width="100px" alt="김예슬" src="https://github.com/yeseul-kim01.png" /> | <img width="100px" alt="김나림" src="https://github.com/rlanafla.png" /> | <img width="100px" alt="김대욱" src="https://github.com/TrioDW.png" /> | <img width="100px" alt="김동인" src="https://github.com/qlqlrh.png" /> | <img width="100px" alt="김예원" src="https://github.com/janghyeon02.png" /> | <img width="100px" alt="박장현" src="https://github.com/janghyeon02.png" /> 
-| yesul0718@pusan.ac.kr | pc123@pusan.ac.kr | kdu5233@pusan.ac.kr | dongin@pusan.ac.kr | yewon1799@pusan.ac.kr | jangh1519@pusan.ac.kr | 
-| 정보컴퓨터공학부 <br/> 백엔드 개발 | 정보컴퓨터공학부 <br/> 프론트엔드 개발 |  정보컴퓨터공학부 <br/> AI 개발 및 인프라 구축 | 정보컴퓨터공학부 <br/> 백엔드 개발 | 시각디자인학과 <br/> 디자인 | 경제학부 <br/> 기획 | 
+- yesul0718@pusan.ac.kr
+- 정보컴퓨터공학부 및 정보의생명공학대학 학생회장·비상대책위원장 등 다수의 학생 회 운영 실무 경험을 보유함. 실제 학생회 조직 운영과 행정 시스템의 구조적 문제를 깊이 있게 이해하고 있음.
+- PNU OPS 동아리 소속으로 백엔드 개발(Spring Boot, Django) 및 클라우드 서비스 기반 배포 경험 보유.
+- Spring Boot 기반 서버 설계, 프론트엔드 구현 등 서비스 전반의 아키텍처를 독립적 으로 설계·운영 할 수 있는 핵심 개발 역량 보유.
+- 기획·개발·학생회 실무를 아우르는 통합형 프로젝트 총괄 리더십 역량을 보유함.
+
+김나림 (프론트엔드 개발자, 부산대학교 정보컴퓨터공학부)
+
+- pc123@pusan.ac.kr
+- React 프레임워크, Spring Boot를 통한 프론트엔드, 백엔드 프로젝트 경험
+- 기획 및 UI/UX 설계 경험
+
+김대욱 (AI 개발자, 부산대학교 정보컴퓨터공학부)
+
+- kdu5233@pusan.ac.kr
+- 2023 5 th Path Hack 1위 대상 (창업진흥원장상)
+- 2023 제 1회 SW Innovation 창업해커톤 2위 우수상
+- 2022~2024 정보컴퓨터공학부 ‘세론’ 재정사무부장
+- 2023 정보컴퓨터공학부 UNTOC 회장
+
+김동인 (백엔드 개발자, 부산대학교 정보컴퓨터공학부)
+
+- dongin@pusan.ac.kr
+- 24, 25년도 정보컴퓨터공학부 IT서비스출시 동아리 APPTIVE 회장
+- 다양한 학과 활동 및 운영진, 자치활동 경험을 바탕으로 직군간 소통 및 협업 운영에 능함
+- 지역상생 상상해커톤 최우수상
+- 2025 DAIC 최우수상
+
+김예원 (UI/UX 디자이너, 부산대학교 디자인학과 디자인앤테크놀로지 전공)
+
+- yewon1799@pusan.ac.kr
+- 외주를 통한 기획 및 개발팀과의 다양한 협업 경험 보유
+- FIgma, Adobe Photoshop, Adobe Illustrator, Blender (3D ahepffd, 렌더링 툴)등의 다양한 툴 능숙하게 활용 가능
+- 2024 예술대학 디자인학과 학생회 ‘누끼’ 학생회장
+
+박장현 (기획자, 부산대학교 경제학부)
+- jangh1519@pusan.ac.kr
+- 24년도 부산대학교 중앙동아리 회장
+- 타 학교, 동아리와 협업 경험 다수
 
 
 ## 7. 해커톤 참여 후기
