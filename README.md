@@ -371,7 +371,9 @@ docker-compose up --build
 
 
 ## 5. 소개 및 시연 영상
-(영상 주소 삽입 예정⚠️)
+https://github.com/user-attachments/assets/8e52caf9-1da9-42f5-b51a-459c6c0bacc1 
+
+
 
 ## 6. 팀 소개
 
